@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="icon" 
+    type="image/logo.png" 
+    href="/public/archives/img/logo.png" />
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="form-inline" id="abrirMenu"><i class="fas fa-bars"></i></a>
+            <img src="IMG/logo.png" width="150px" height="150px" alt="">
+            <a class="form-inline" href="">
+                <i class="fas fa-search"></i>
+            </a>
+        </nav>
+    </header>
+    <nav id="menu">
+        <a id="fecharMenu"><i class="fas fa-bars"> Fechar</i></a>
+        <a href="/public/archives/index.html">Home</a>
+        <a href="/public/archives/cardapio.html">Cardapio</a>
+        <a href="/public/archives/carteira.html">Carteira</a>
+        <a href="/public/archives/sobre.html">Sobre</a>
+        <a href="/public/archives/contato.html">Contato</a>
+        <a href="#">Configurações</a>
+    </nav>
+    <section>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Cardapio</li>
+                </ol>
+            </nav>
+
+
+            <form>
+                <a id="show" class="btn btn-outline-success"><i class="fas fa-plus-square"></i> Adicionar</a>
+
+            </form>
+            <table class="table">
+                <tbody>
+                    <td>
+                        <h2>Hamburguer</h2>
+                    </td>
+                    <tr>
+                        <td width="80px" height="80px"><img src="IMG/Hamburguer.jfif" alt="Hamburguer"></td>
+                        <td colspan="3">
+                            <h2>X - Tudo</h2>
+                            <p>Salada, alface, 2 carne de 250g</p>
+                        </td>
+                        <td>R$ 15,99</td>
+                        <td><button class="btn btn-primary"><i class="fas fa-plus-square"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td width="80px" height="80px"><img src="IMG/Hamburguer.jfif" alt="Hamburguer"></td>
+                        <td colspan="3">
+                            <h2>X - Tudo</h2>
+                            <p>Salada, alface, 2 carne de 250g</p>
+                        </td>
+                        <td>R$ 15,99</td>
+                        <td><button class="btn btn-primary"><i class="fas fa-plus-square"></i></button></td>
+                    </tr>
+                    <tr>
+                        <td width="80px" height="80px"><img src="IMG/Hamburguer.jfif" alt="Hamburguer"></td>
+                        <td colspan="3">
+                            <h2>X - Tudo</h2>
+                            <p>Salada, alface, 2 carne de 250g</p>
+                        </td>
+                        <td>R$ 15,99</td>
+                        <td><button class="btn btn-primary"><i class="fas fa-plus-square"></i></button></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="container">
+            <div id="adicionar">
+                <h2>Nome</h2>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a id="btnDetalhes" class="nav-link" href="#">Detalhes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="btnComplemento" class="nav-link" href="#">Complementos</a>
+                    </li>
+
+                </ul>
+
+                <div id="detalhes">
+                    <div class="form-group">
+                        <div class="card text-center">
+                            <div class="card-header">
+                                Imagem de capa
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><img width="100px" height="100px"
+                                        src="/public/archives/IMG/img.png" alt="">
+                                    <P>Arraste uma imagem</P>
+                                    <p>-ou-</p>
+                                </p>
+                                <a class="btn btn-primary">Selecione uma Imagem</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control">
+                            <option>selecione uma categoria</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nomePrato">Nome do prato</label>
+                        <input type="text" class="form-control" id="nomePrato" placeholder="Nome do prato">
+                    </div>
+                    <div class="form-group">
+                        <label for="descricao">Descrição</label>
+                        <textarea class="form-control" id="descricao" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="valor">Valor do prato</label>
+                        <input class="form-control" type="text" name="valor" id="valor">
+                    </div>
+                </div>
+                
+                <div id="complemento">
+                    
+                    <div class="form-group">
+                        <table class="table table-hover">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Descrição</th>
+                                <th scope="col">valor</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <th scope="row"><input class="form-check-input" type="checkbox" value="" id="defaultCheck1"></th>
+                                <td>Nome</td>
+                                <td>Descrição</td>
+                                <td>Valor</td>
+                              </tr>
+                        
+                            </tbody>
+                          </table>
+                    </div>
+                    <a id="btnNovoComplemento" class="btn btn-primary"><i class="fas fa-plus-square"></i> Novo</a>
+                    <div id="novoComplemento">
+                        <div class="form-group">
+                            <label for="nomeComplemento">Nome do complemento</label>
+                            <input type="text" class="form-control" id="nomeComplemento" placeholder="Nome do complemento">
+                        </div>
+                        <div class="form-group">
+                            <label for="descricao">Descrição</label>
+                            <textarea class="form-control" id="descricao" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="valor">Valor do Complemento</label>
+                            <input class="form-control" type="text" name="valor" id="valor">
+                        </div>
+                        <a id="adicionarComplemento" class="btn btn-success"><i class="fas fa-plus-square"></i> Adicionar</a>
+                    </div>
+
+                </div>
+
+                <button type="button" id="close" class="btn btn-danger">Fechar</button>
+                <button type="button" class="btn btn-success">Adicionar</button>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        &copy;Burguerboss<em id="date"></em>. Todos os direitos reservados
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+<script src="JS/index.js"></script>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endereço</title>
+    <link rel="icon" 
+    type="image/logo.png" 
+    href="/public/archives/img/logo.png" />
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="form-inline" id="abrirMenu"><i class="fas fa-bars"></i></a>
+            <img src="IMG/logo.png" width="150px" height="150px" alt="">
+            <a class="form-inline" href="">
+                <i class="fas fa-search"></i>
+            </a>
+        </nav>
+    </header>
+    <nav id="menu">
+        <a id="fecharMenu"><i class="fas fa-bars"> Fechar</i></a>
+        <a href="/public/archives/index.html">Home</a>
+        <a href="/public/archives/cardapio.html">Cardapio</a>
+        <a href="/public/archives/carteira.html">Carteira</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+        <a href="#">Configurações</a>
+    </nav>
+    <section>
+        <div class="container">
+            <div id="showEndereco">
+                <form>
+
+
+
+                    <div class="form-group">
+                        <label>Cep:
+                            <input class="form-control" name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                                onblur="pesquisacep(this.value);" /></label><br />
+                    </div>
+                    <div class="form-group">
+                        <label>Rua:
+                            <input class="form-control" name="rua" type="text" id="rua" size="60" /></label><br />
+                    </div>
+                    <div class="form-group">
+                        <label>Numero:
+                            <input class="form-control" name="numero" type="text" id="numero" value="" size="10"
+                                maxlength="9" /></label>
+                        <label>Complemento:
+                            <input class="form-control" name="complemento" type="text" id="numero" value="" size="45"
+                                maxlength="9" />
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <label>Bairro:
+                            <input class="form-control" name="bairro" type="text" id="bairro" size="40" /></label><br />
+    
+                    </div>
+                    <div class="form-group">
+                        <label>Cidade:
+                            <input class="form-control" name="cidade" type="text" id="cidade" size="40" /></label><br />
+                    </div>
+                    
+    
+                </form>
+                <a href="/public/archives/index.html" type="button" style="background: orange; margin: 30px 0 30px 0px;"
+                class="button-large btn  btn-lg btn-block">Continuar</a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="rodape">
+        &copy;Burguerboss<em id="date"></em>. Todos os direitos reservados
+    </footer>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+</script>
+<script src="JS/index.js"></script>
+
+</html>
